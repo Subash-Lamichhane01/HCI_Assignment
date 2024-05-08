@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Application</title>
+</head>
+<body>
+    <header class = "main-header">
+        <nav >
+            <ul class = "container">
+                <img class = "logo" src = "images/learning.png">
+                <div class="header1"><h1>E-Learning</h1></div>
+                <div class = "header-second">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="about.html" >About Us</a></li>
+                </div>
+            </ul>
+        </nav>
+       </header> 
+       <div class="apply-content">
+        <h1> Application</h1>
+        <p> <i> To apply, please complete the online application form and submit all required materials by the 4<sup>th</sup> of May. <br> We encourage you to submit your application as early as possible, as space is limited in some programs.</i></p>
+       </div>
+       <br>
+       <section class = "form-container">
+       <form action="/submit\_application"> 
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required><br> 
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone"><br> 
+
+        <label for="mailingaddress">Mailing Address:</label>
+        <textarea id="mailingaddress" name="mailingaddress" rows="4" cols="50" required></textarea><br>
+
+         <label for="dob">Date of Birth:</label> 
+         <input type="date" id="dob" name="dob" required><br>
+
+         <label for="highschool">High School Name and Graduation Date:</label> 
+         <input type="text" id="highschool" name="highschool" required><br>
+
+        <label for="collegeuniversity">College or University Name and Degree(s) Earned (if applicable):</label> 
+        <textarea id="collegeuniversity" name="collegeuniversity" rows="4" cols="50"></textarea><br>
+
+        <label for="programofstudy">Intended Program of Study:</label>
+        <input type="text" id="programofstudy" name="programofstudy" required><br> 
+
+        <label for="startterm">Anticipated Start Term:</label>
+         <input type="text" id="startterm" name="startterm" required><br>
+
+          <label for="academicbackground">Academic Background (e.g. GPA, test scores):</label> 
+          <textarea id="academicbackground" name="academicbackground" rows="4" cols="50" required></textarea><br> 
+
+          <label for="workexperience">Work Experience (if applicable):</label> 
+          <textarea id="workexperience" name="workexperience" rows="4" cols="50"></textarea><br> 
+
+          <label for="extracurricular">Extracurricular Activities and Honors:</label>
+          <textarea id="extracurricular" name="extracurricular" rows="4" cols="50"></textarea>
+          <br>
+           <label for="personalstatement">Personal Statement or Essay:</label> 
+          <textarea id="personalstatement" name="personalstatement" rows="4" cols="50" required></textarea><br>
+
+           <label for="letters">Letters of Recommendation:</label>
+            <input type="file" id="letters" name="letters" accept=".pdf,.doc,.docx" required><br> 
+
+            <label for="applicationfee">Application Fee Payment or Fee Waiver Request:</label> 
+            <input type="text" id="applicationfee" name="applicationfee" required><br> <br>
+            
+            <input type="submit" value="Submit Application"> 
+        </form>
+        </section>
+
+            <br>
+            <br>
+       <footer class = "main-footer">
+        <div class="footer-container">
+           <div>
+               <ul>
+                   <p> <b>Find Us</b></p>
+               </ul>
+           </div>
+           <div>
+               <ul>
+                   <p><b>Contact Us</b></p>
+                   <br>
+                   <p> enquiries@e-learning.com</p>
+               </ul>
+           </div>
+           <div>
+               <ul>
+                   <p><b>Any enquiries</b> </p>
+                   <br>
+                   <p>0410101010</p>
+                   <br>
+                   <p>(02)02542115</p>
+               </ul>
+           </div>
+        </div>
+        <br>
+        <div class="media">
+       <a href = "https://facebook.com"><img class = "company-logo" src = "images/Facebook Logo.png"></a>
+        <a href = "https://spotify.com"> <img class = "company-logo" src = "images/Spotify Logo.png"></a>
+        <a href = "https://youtube.com"><img class = "company-logo" src = "images/Youtube Logo.png"></a>
+        </div>
+        
+       </footer>
+    
+    
+</body>
+</html>
