@@ -57,7 +57,7 @@
                     <label for = "message">Message</label>
                     <textarea name = "message" placeholder = "Enter your message"></textarea>
                     <br>
-                    <input type = "submit" name = "submit" value = "Submit">
+                    <input type="submit" name="submit" value="Submit" onclick="formSubmitted()">
                     <br>
                 </form>
             </div>
@@ -95,7 +95,12 @@
         </div>
         
        </footer>
-
+       <script>
+        function formSubmitted() {
+          alert("Your form has been submitted.");
+          // Additional code here if needed
+        }
+        </script>
     
 </body>
 </html>

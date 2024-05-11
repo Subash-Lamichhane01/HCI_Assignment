@@ -65,14 +65,20 @@ a:hover{
 }
 
 @media (max-width: 767px) {
+
+  .main-header{
+    height: fit-content;
+    background-color: #4a306d;
+  }
   /* Adjust navigation */
   .header1 {
     display: none; /* Hide the header text */
   }
   .header-second {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+   
   }
   .header-second li {
     margin-bottom: 10px;
@@ -128,7 +134,13 @@ a:hover{
   .header-second li {
     margin: 0 10px; /* Add some horizontal margin */
   }
-
+  .page1-photo{
+    width: 60%;
+    height: auto;
+  }
+  a{
+    color: #4a306d;
+  }
 }
 
 /* Styles for screens smaller than 480px (typical for small mobile devices) */
