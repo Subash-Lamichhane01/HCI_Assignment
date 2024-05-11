@@ -83,6 +83,9 @@ a:hover{
   .header-second li {
     margin-bottom: 10px;
   }
+  .header-second li a{
+      color: #4a306d;
+  }
 
   /* Adjust layout */
   .container {
@@ -138,9 +141,7 @@ a:hover{
     width: 60%;
     height: auto;
   }
-  a{
-    color: #4a306d;
-  }
+ 
 }
 
 .main-footer{
