@@ -103,6 +103,21 @@ a:hover{
     margin-bottom: 20px;
     text-align: center;
   }
+  .about-photo1,
+  .about-photo2 {
+    max-width: 80%; /* Change the max-width to 80% for smaller screens */
+    height: auto;
+  }
+}
+
+/* Styles for screens smaller than 480px (typical for small mobile devices) */
+@media (max-width: 479px) {
+  /* Adjust image sizes for even smaller screens */
+  .about-photo1,
+  .about-photo2 {
+    max-width: 60%; /* Change the max-width to 60% for very small screens */
+    height: auto;
+  }
 }
 .main-footer{
     height: 190px;
