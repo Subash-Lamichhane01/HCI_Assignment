@@ -66,16 +66,13 @@ a:hover{
 
 @media (max-width: 767px) {
 
-  .main-header{
-    height: fit-content;
-    background-color: #4a306d;
-  }
   /* Adjust navigation */
   .header1 {
     display: none; /* Hide the header text */
   }
   .header-second {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
    
@@ -107,6 +104,7 @@ a:hover{
   .footer-container {
     flex-direction: column;
     align-items: center;
+    height: fit-content;
   }
   .footer-container div {
     margin-bottom: 20px;
@@ -138,10 +136,13 @@ a:hover{
     margin: 0 10px; /* Add some horizontal margin */
   }
   .page1-photo{
-    width: 60%;
+    width: auto;
     height: auto;
   }
- 
+  .page1-photo{
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .main-footer{
@@ -156,6 +157,7 @@ a:hover{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    
 }
 .company-logo{
 
