@@ -27,7 +27,7 @@
        </div>
        <br>
        <section class = "form-container">
-       <form action="/submit\_application"> 
+       <form id ="myForm" action="index.html"> 
         <label for="fullname">Full Name:</label>
         <input type="text" id="fullname" name="fullname" required><br> 
 
@@ -35,7 +35,7 @@
         <input type="email" id="email" name="email" required><br>
 
         <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone"><br> 
+        <input type="tel" id="phone" name="phone" required pattern="Number"><br> 
 
         <label for="mailingaddress">Mailing Address:</label>
         <textarea id="mailingaddress" name="mailingaddress" rows="4" cols="50" required></textarea><br>
@@ -75,6 +75,9 @@
             
             <input type="submit" value="Submit Application"> 
         </form>
+        <div class="submission-cue hidden">
+            <p>Thank you! Your application has been submitted.</p>
+          </div>
         </section>
 
             <br>
