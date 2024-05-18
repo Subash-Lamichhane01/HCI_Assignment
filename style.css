@@ -14,6 +14,7 @@ li{
     text-decoration: blueviolet;
     font-size: 20px;
 }
+
 a{
     text-decoration: none;
     color: #f4f9e9;
@@ -30,12 +31,20 @@ a{
     height: 109px;
     width: auto;
 }
+.menu-bar{
+  height: 30px;
+  width: 30px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  display: none;/* Add this line */ /* Add this line */
+}
 .container{
     display: flex;
     justify-content:space-between;
     flex-wrap: nowrap;
    
 }
+
 .header-second{
     padding: 30px;
 }
@@ -68,29 +77,51 @@ a:hover{
 
   .main-header{
     margin-bottom: 50px;
+    padding: 0;
+    height: fit-content;
   }
   /* Adjust navigation */
   .header1 {
     display: none; /* Hide the header text */
   }
+
+
   .header-second {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-   
+    flex-direction: column;
+    align-items: start;
+    margin-top: 10px;
+    background-color: #f2f2f2;
+    width: 100%;     /* Add padding */
   }
-  .header-second li {
-    margin-bottom: 10px;
+
+  .menu-bar{
+    display: inline-block;
+    position: relative;
   }
+  .header-second li{
+    margin:10px;
+    text-align: center;
+  }
+
+  .menu-bar:hover{
+    cursor: pointer;
+  
+  }
+  
   .header-second li a{
-      color: #4a306d;
+    color: #4a306d;
+  
   }
+  
 
   /* Adjust layout */
   .container {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    max-height: fit-content;
   }
   .logo {
     margin-bottom: 10px;
@@ -118,27 +149,8 @@ a:hover{
     max-width: 80%; /* Change the max-width to 80% for smaller screens */
     height: auto;
   }
-  .main-header {
-    position: static; /* Change to static position */
-    padding: 0; /* Remove padding */
-  }
-
-  .container {
-    flex-direction: column;
-    align-items: center;
-    /* Center align items */
-  }
-
-  .header-second {
-    margin-top: 10px;
-    background-color: #f2f2f2; /* Add background color */
-    width: 100%; /* Make it full width */
-    padding: 10px; /* Add padding */
-  }
-
-  .header-second li {
-    margin: 0 10px; /* Add some horizontal margin */
-  }
+    
+  
   .page1-photo{
     width: auto;
     height: auto;
